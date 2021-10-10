@@ -32,12 +32,7 @@ void loop() {
   // read distance in cm
   dist_cm = sr04_rgb.read_cm();
   Serial.print("cm: ");
-  Serial.print(dist_cm);
-
-  // read distance in micro-second
-  dist_us = sr04_rgb.read_us();
-  Serial.print("   us: ");
-  Serial.println(dist_us);
+  Serial.println(dist_cm);
   
   // turn on blue LED if distance measured is less than 50cm
   // The sensor will return 0 if the measurement is beyond sensing range,

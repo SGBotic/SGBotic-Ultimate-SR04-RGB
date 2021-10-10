@@ -24,7 +24,10 @@ void loop() {
   delay(50); //wait for the sensor to acquire data
   
   Serial.print("cm: ");
-  Serial.println(sr04_rgb.read_cm()); // read distance in cm
+  Serial.print(sr04_rgb.read_cm()); // read distance in cm
+
+  Serial.print("   us: ");
+  Serial.println(sr04_rgb.read_us()); // read distance in uS
   
   delay(100); // short delay of 0.1 second
 }
